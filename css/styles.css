@@ -1,0 +1,67 @@
+.sectionPart {
+	-webkit-perspective: 300px;
+	-moz-perspective: 300px;
+	-o-perspective: 300px;
+	perspective: 300px;
+}
+#imageRotate {
+	-webkit-transition: all 4s ease-in-out;
+	-moz-transition: all 4s ease-in-out;
+	-o-transition: all 4s ease-in-out;
+	transition: all 4s ease-in-out;
+	-webkit-transition-delay: 3s;
+	-moz-transition-delay: 3s;
+	-o-transition-delay: 3s;
+	transition-delay: 3s;
+}
+.rotate {
+	-webkit-transform: rotateY(-720deg);
+	-moz-transform: rotateY(-720deg);
+	-o-transform: rotateY(-720deg);
+	transform: rotateY(-720deg);
+}
+.imageRolling {
+	opacity: 0;
+	-webkit-transition-property: left, opacity;
+	-webkit-transition-duration: 2s, 3s;
+	-webkit-transition-timing-function: ease, ease;
+	-webkit-transtion-delay: 0s, .5s;
+	-moz-transition-property: left, opacity;
+	-moz-transition-duration: 2s, 3s;
+	-moz-transition-timing-function: ease, ease;
+	-moz-transtion-delay: 0s, .5s;
+	-o-transition-property: left, opacity;
+	-o-transition-duration: 2s, 3s;
+	-o-transition-timing-function: ease, ease;
+	-o-transtion-delay: 0s, .5s;
+	transition-property: left, opacity;
+	transition-duration: 2s, 3s;
+	transition-timing-function: ease, ease;
+	transtion-delay: 0s, .5s;
+}
+#image1 {
+	left: 1400px;
+}
+#image2 {
+	left: 1600px;
+}
+#image3 {
+	left: 1800px;
+	display: block;
+}
+#image1.animation-rolling {
+	left: 0px;
+}
+#image2.animation-rolling {
+	left: 200px;
+}
+#image3.animation-rolling {
+	left: 400px;
+}
+.animation-rolling {
+	opacity: 1;
+	-webkit-transform: rotate(-1080deg);
+	-moz-transform: rotate(-1080deg);
+	-o-transform: rotate(-1080deg);
+	transform: rotate(-1080deg);
+}
